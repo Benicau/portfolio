@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% endblock %}
+{% block body %}
+<section id="home">
+    <div class="menu">
+        <ul>
+            <li><a href="#aPropos"><span>A propos</span>
+                    <div class="pattern"></div>
+                </a></li>
+            <li><a href="#competence"><span>Compétences</span>
+                    <div class="pattern"></div>
+                </a></li>
+            <li><a href="#porfolio"><span>Portfolio</span>
+                    <div class="pattern"></div>
+                </a></li>
+            <li><a href="#contact"><span>Contact</span>
+                    <div class="pattern"></div>
+                </a></li>
+        </ul>
+    </div>
+    <div class="middle">
+        <div class="centre">
+            <div class="cercle">
+                <h1>Salut, je suis Ben</h1>
+                <p><span>Webdesign</span> et <span>Web Development</span></p>
+                <div class="logo">BC
+                  
+                </div>
+            </div>
+        </div>
+        <div class="centrejaune"></div>
+        <div class="bigCercle">
+            <div class="color1 color"></div>
+            <div class="color2 color"></div>
+            <div class="color3 color"></div>
+            <div class="color4 color"></div>
+        </div>
+    </div>
+</section>
+<div class="parallaxImg img1">
+    <div class="color1">
+        <div class="pattern"></div>
+    </div>
+</div>
+<section id="slidemenuapropos">
+   
+    <div class="parallax">    
+        <img src="{{ asset('/imgSite/slidehome1.png') }}" class="layer" data-move="-0.2" data-x="0" data-y="10"> 
+        <img src="{{ asset('/imgSite/slidehome2.png') }}" class="layer" data-move="0.2" data-x="0" data-y="10">   
+        <img src="{{ asset('/imgSite/slidehome3.png') }}" class="layer" data-move="-0.2" data-x="0" data-y="10" 
+    </div>
+ 
+    <div class="menufixe">
+        <div class="pattern"></div>
+        <div class="content">
+            <div class="logo"><a href="#">BC<div class="ligne"></div></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    |
+                    <li><a href="#aPropos">A propos</a></li>
+                    |
+                    <li><a href="#competence">Compétences</a></li>
+                    |
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    |
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="aPropos">
+
+        <h2>A propos </h2>
+        <p class="intro">Ici vous trouverez plus d'information a propos de moi, mon expérience en programation et en design</p>
+       
+    </div>
+</section>
+<div class="parallaxImg img2">
+    <div class="color2">
+        <div class="pattern"></div>
+    </div>
+</div>
+<section id="competence">
+    <div class="pattern">
+        <h2>Compétences</h2>
+
+    </div>
+</section>
+<div class="parallaxImg img3">
+    <div class="color3">
+        <div class="pattern"></div>
+    </div>
+</div>
+<section id="porfolio">
+<div id="particles-js"></div>
+    <h2>Portfolio</h2>
+    <div class="menuPortfolio">
+        <ul>
+            <li><a href="#porfolio">Tout</a></li>
+            <li><a href="#porfolio">PHP</a></li>
+            <li><a href="#porfolio">Javascript</a></li>
+        </ul>
+    </div>
+</section>
+<div class="parallaxImg img4">
+    <div class="color4">
+        <div class="pattern"></div>
+    </div>
+</div>
+<section id="contact">
+    <div class="pattern">
+        <h2>Contact</h2>
+    </div>
+</section>
+<footer>
+    <p>©Copyright 2022 Benoît Caucheteux - Tous droits réservé</p>
+</footer>
+{% endblock %}
+{% block javascripts %}{# pour récup ce qu'il y a dans le parent #}
+{{parent()}}
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+{% endblock %}
